@@ -5,21 +5,21 @@
 class Rodarion < Formula
   desc "Push and pull Rodarion language resource data via the REST API."
   homepage "https://github.com/cubera-ch/rodarion-dist"
-  version "0.1.2"
+  version "0.1.3"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.2/rodarion_0.1.2_darwin_amd64.tar.gz"
-      sha256 "ffdca7dfb4bf5e5acf059881612c1bc32f0b6431f43e0da6e9b080081edb65e3"
+      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.3/rodarion_0.1.3_darwin_amd64.tar.gz"
+      sha256 "e992434b705ba099a376c9a6511a4d8725b7a5293f2199fa64777d8f47b4e931"
 
       define_method(:install) do
         bin.install "rodarion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.2/rodarion_0.1.2_darwin_arm64.tar.gz"
-      sha256 "6d0c9c4d23c122409f51be328af6c15193ca85f4cee950cfaa5deebd076597f8"
+      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.3/rodarion_0.1.3_darwin_arm64.tar.gz"
+      sha256 "aa676c5ac74eddcc61eeae383cf671e67b9a41de5e3b715dfa7f7662257e330b"
 
       define_method(:install) do
         bin.install "rodarion"
@@ -29,15 +29,15 @@ class Rodarion < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.2/rodarion_0.1.2_linux_amd64.tar.gz"
-      sha256 "6682f419adafe93993a7fa9a98ea9e10e80b2433a118071d13ba1016f7df8531"
+      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.3/rodarion_0.1.3_linux_amd64.tar.gz"
+      sha256 "c3b45bae935eb24822e10076a6ba5cd0b9598233aee4b687126ee1c4b71ec16a"
       define_method(:install) do
         bin.install "rodarion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.2/rodarion_0.1.2_linux_arm64.tar.gz"
-      sha256 "71e68d60abbff4dabeefd9534b37a9325291c8dfb98d366d11d8b150420c7879"
+      url "https://github.com/cubera-ch/rodarion-dist/releases/download/v0.1.3/rodarion_0.1.3_linux_arm64.tar.gz"
+      sha256 "615c2e90345b232afc88d264dc412625c7b4b489a54c426ca0890c2f334a1e2f"
       define_method(:install) do
         bin.install "rodarion"
       end
